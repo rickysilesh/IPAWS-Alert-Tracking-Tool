@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_92277783bf58bef95e35065b9260ee59 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_92277783bf58bef95e35065b9260ee59" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_92277783bf58bef95e35065b9260ee59 = L.map(
+                "map_92277783bf58bef95e35065b9260ee59",
+                {
+                    center: [37.0902, -95.7129],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b71e894c533abc0228b6c516bf417893 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b71e894c533abc0228b6c516bf417893.addTo(map_92277783bf58bef95e35065b9260ee59);
+        
+    
+            var marker_164032a304fca5c0e033289f5ed6082b = L.marker(
+                [52.15001, 1.41469],
+                {
+}
+            ).addTo(map_92277783bf58bef95e35065b9260ee59);
+        
+    
+            var icon_50052c9b12534e476717012a549914a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_164032a304fca5c0e033289f5ed6082b.setIcon(icon_50052c9b12534e476717012a549914a4);
+        
+    
+        var popup_e2d37816d5b3b743c1d0eebcfd8af0b2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_102dd6a33851dc2dfd06d8faf025f888 = $(`<div id="html_102dd6a33851dc2dfd06d8faf025f888" style="width: 100.0%; height: 100.0%;"><b>Coastal Flood Advisory</b><br>* COASTAL FLOODING...A combination of abnormally high tides and surge from Sally will allow water levels to run 2 to 3 feet Above Ground Level (3.5 to 4.5 feet MSL) during times of high tide through Thursday.  * COASTAL FLOOD TIMING...During afternoon high tides through Thursday.  * COASTAL FLOOD IMPACTS...Minor coastal flooding, especially low- lying roads or other areas sensitive to nuisance flooding.<br>Identifier: NWS-IDP-PROD-4445954-3699490<br>Sender: w-nws.webmaster@noaa.gov<br>Sent: 2020-09-16T00:03:00.000Z</div>`)[0];
+                popup_e2d37816d5b3b743c1d0eebcfd8af0b2.setContent(html_102dd6a33851dc2dfd06d8faf025f888);
+            
+        
+
+        marker_164032a304fca5c0e033289f5ed6082b.bindPopup(popup_e2d37816d5b3b743c1d0eebcfd8af0b2)
+        ;
+
+        
+    
+    
+            marker_164032a304fca5c0e033289f5ed6082b.bindTooltip(
+                `<div>
+                     NWS-IDP-PROD-4445954-3699490
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e8fa8b03f9b06338dfa1dfd5e0b14ca4 = L.marker(
+                [36.28349, -75.87047],
+                {
+}
+            ).addTo(map_92277783bf58bef95e35065b9260ee59);
+        
+    
+            var icon_596bb1be7bc13010a4e2e07fae92c5df = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e8fa8b03f9b06338dfa1dfd5e0b14ca4.setIcon(icon_596bb1be7bc13010a4e2e07fae92c5df);
+        
+    
+        var popup_8bcfafd8a9e27bd10a3975dc30dbe82f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a04d8eeda5d3e602c008e11881635769 = $(`<div id="html_a04d8eeda5d3e602c008e11881635769" style="width: 100.0%; height: 100.0%;"><b>Small Craft Advisory</b><br>* WHAT...North winds 15 to 20 kt with gusts up to 25 kt and waves around 2 ft expected.  * WHERE...Currituck Sound.  * WHEN...From 4 AM to 4 PM EST Sunday.  * IMPACTS...Conditions will be hazardous to small craft.<br>Identifier: NWS-IDP-PROD-4767760-3849910<br>Sender: w-nws.webmaster@noaa.gov<br>Sent: 2021-02-06T19:12:00.000Z</div>`)[0];
+                popup_8bcfafd8a9e27bd10a3975dc30dbe82f.setContent(html_a04d8eeda5d3e602c008e11881635769);
+            
+        
+
+        marker_e8fa8b03f9b06338dfa1dfd5e0b14ca4.bindPopup(popup_8bcfafd8a9e27bd10a3975dc30dbe82f)
+        ;
+
+        
+    
+    
+            marker_e8fa8b03f9b06338dfa1dfd5e0b14ca4.bindTooltip(
+                `<div>
+                     NWS-IDP-PROD-4767760-3849910
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_3920837ce831e9b20a4fb65adbb374c2 = L.polygon(
+                [[-101.69, 37.5], [-101.87, 37.72], [-101.36, 37.92], [-101.16, 37.68], [-101.69, 37.5]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_92277783bf58bef95e35065b9260ee59);
+        
+    
+            var marker_886e49b1e9a8f5d49f329045b3ddb08a = L.marker(
+                [60.679081, -147.098104],
+                {
+}
+            ).addTo(map_92277783bf58bef95e35065b9260ee59);
+        
+    
+            var icon_8d066399d4475dc55a9535a6f09f3e07 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_886e49b1e9a8f5d49f329045b3ddb08a.setIcon(icon_8d066399d4475dc55a9535a6f09f3e07);
+        
+    
+        var popup_5ca35db1353135e8d2a4a53ae6b49354 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5a159e0afc49647627f1b96fe49ffe06 = $(`<div id="html_5a159e0afc49647627f1b96fe49ffe06" style="width: 100.0%; height: 100.0%;"><b>Special Weather Statement</b><br>Snow is expected to develop on Wednesday morning over the eastern Kenai Peninsula and become heavier by afternoon. Easterly winds through Turnagain Arm are also expected to increase on Wednesday and bring the potential for periods of reduced visibility along the highway due to blowing snow. Warmer air moving into the region will start to turn the snow to rain in Seward and Turnagain Arm Wednesday night and continue as rain into Thursday in those locations.  For Turnagain Pass, precipitation is likely to remain snow through Thursday with periods of reduced visibility in blowing snow.  Stay tuned to the latest forecasts at weather.gov/Anchorage.<br>Identifier: NWS-IDP-PROD-3927867<br>Sender: w-nws.webmaster@noaa.gov<br>Sent: 2019-11-26T14:24:00.000Z</div>`)[0];
+                popup_5ca35db1353135e8d2a4a53ae6b49354.setContent(html_5a159e0afc49647627f1b96fe49ffe06);
+            
+        
+
+        marker_886e49b1e9a8f5d49f329045b3ddb08a.bindPopup(popup_5ca35db1353135e8d2a4a53ae6b49354)
+        ;
+
+        
+    
+    
+            marker_886e49b1e9a8f5d49f329045b3ddb08a.bindTooltip(
+                `<div>
+                     NWS-IDP-PROD-3927867
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_54aab99d93cce3ff884c4906ce2cc4ba = L.marker(
+                [35.622332, -95.959244],
+                {
+}
+            ).addTo(map_92277783bf58bef95e35065b9260ee59);
+        
+    
+            var icon_591b9c100b57f44175b90fbc3680f47d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_54aab99d93cce3ff884c4906ce2cc4ba.setIcon(icon_591b9c100b57f44175b90fbc3680f47d);
+        
+    
+        var popup_37a777735ca6cd7b50d60baed199b274 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_36785cccad636469ea5102cac98c179e = $(`<div id="html_36785cccad636469ea5102cac98c179e" style="width: 100.0%; height: 100.0%;"><b>Severe Thunderstorm Warning</b><br>The Severe Thunderstorm Warning has been cancelled and is no longer in effect.<br>Identifier: urn:oid:2.49.0.1.840.0.15e3aa787d8309418977a87815a01da8bbef682c.001.1<br>Sender: w-nws.webmaster@noaa.gov<br>Sent: 2022-04-16T06:48:00.000Z</div>`)[0];
+                popup_37a777735ca6cd7b50d60baed199b274.setContent(html_36785cccad636469ea5102cac98c179e);
+            
+        
+
+        marker_54aab99d93cce3ff884c4906ce2cc4ba.bindPopup(popup_37a777735ca6cd7b50d60baed199b274)
+        ;
+
+        
+    
+    
+            marker_54aab99d93cce3ff884c4906ce2cc4ba.bindTooltip(
+                `<div>
+                     urn:oid:2.49.0.1.840.0.15e3aa787d8309418977a87815a01da8bbef682c.001.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_ba86e7971dedcf6f41dc6a4924b27a6e = L.polygon(
+                [[-95.71, 35.55], [-95.71, 35.59], [-95.51, 35.6], [-95.52, 35.55], [-95.49, 35.4], [-95.73, 35.48], [-95.76, 35.55], [-95.71, 35.55]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_92277783bf58bef95e35065b9260ee59);
+        
+    
+            var marker_6da38bd99d257a28275554ab0d2ce9a8 = L.marker(
+                [46.26898, -74.23001],
+                {
+}
+            ).addTo(map_92277783bf58bef95e35065b9260ee59);
+        
+    
+            var icon_8c68e0ba9a751e621b422dff2f43dcad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6da38bd99d257a28275554ab0d2ce9a8.setIcon(icon_8c68e0ba9a751e621b422dff2f43dcad);
+        
+    
+        var popup_579714c8702bf852d9f9e80ef57a677d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4478fa7f966237f55b7e4c365300d214 = $(`<div id="html_4478fa7f966237f55b7e4c365300d214" style="width: 100.0%; height: 100.0%;"><b>Flood Advisory</b><br>Kankakee River at Dunns Bridge affecting Porter County Kankakee River near Kouts affecting Jasper and Porter Counties The Flood Advisory continues for The Kankakee River near Kouts * until Friday evening. * At  800 PM Monday the stage was 8.7 feet. * Action stage is 10.5 feet. * Flood stage is 11.0 feet. * Forecast...The river will rise to near 10.6 feet by early Thursday morning. * Impact...At 11.0 feet...Agricultural areas begin to flood. Some backwaters begin to fill drainage ditches. <br>Identifier: NWS-IDP-PROD-2775732-2588301<br>Sender: w-nws.webmaster@noaa.gov<br>Sent: 2018-04-17T01:26:18.000Z</div>`)[0];
+                popup_579714c8702bf852d9f9e80ef57a677d.setContent(html_4478fa7f966237f55b7e4c365300d214);
+            
+        
+
+        marker_6da38bd99d257a28275554ab0d2ce9a8.bindPopup(popup_579714c8702bf852d9f9e80ef57a677d)
+        ;
+
+        
+    
+    
+            marker_6da38bd99d257a28275554ab0d2ce9a8.bindTooltip(
+                `<div>
+                     NWS-IDP-PROD-2775732-2588301
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_0ce403e3555165cd042caf404e1d7fe3 = L.polygon(
+                [[-87.06, 41.22], [-87.11, 41.22], [-87.23, 41.18], [-87.27, 41.27], [-87.13, 41.32], [-87.0, 41.28], [-87.06, 41.22]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_92277783bf58bef95e35065b9260ee59);
+        
+    
+            var marker_f520f06f525bec9f9fa3a64282741249 = L.marker(
+                [44.657809, -85.905532],
+                {
+}
+            ).addTo(map_92277783bf58bef95e35065b9260ee59);
+        
+    
+            var icon_c1a6cd604e79e1a01e47bf71c1d79811 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f520f06f525bec9f9fa3a64282741249.setIcon(icon_c1a6cd604e79e1a01e47bf71c1d79811);
+        
+    
+        var popup_1fbc51f450e0ad4eb33e01ac18817345 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e527a00af9fbbca167f26cd0665efe68 = $(`<div id="html_e527a00af9fbbca167f26cd0665efe68" style="width: 100.0%; height: 100.0%;"><b>Lake Wind Advisory</b><br>* WHAT...West winds 15 to 20 knots with gusts up to 25 knots and waves 1 to 2 feet expected.  * WHERE...Lake Moultrie.  * WHEN...From 11 AM to 6 PM EST Saturday.  * IMPACTS...Strong winds and rough waves on Lake Moultrie will create hazardous conditions for small craft.<br>Identifier: NWS-IDP-PROD-4704631-3822344<br>Sender: w-nws.webmaster@noaa.gov<br>Sent: 2021-01-16T01:35:00.000Z</div>`)[0];
+                popup_1fbc51f450e0ad4eb33e01ac18817345.setContent(html_e527a00af9fbbca167f26cd0665efe68);
+            
+        
+
+        marker_f520f06f525bec9f9fa3a64282741249.bindPopup(popup_1fbc51f450e0ad4eb33e01ac18817345)
+        ;
+
+        
+    
+    
+            marker_f520f06f525bec9f9fa3a64282741249.bindTooltip(
+                `<div>
+                     NWS-IDP-PROD-4704631-3822344
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7cb1c1524795fbb58802532a8a68559c = L.marker(
+                [42.343716, -88.297027],
+                {
+}
+            ).addTo(map_92277783bf58bef95e35065b9260ee59);
+        
+    
+            var icon_e4eaebd7bb73d204fd681b03304c246d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7cb1c1524795fbb58802532a8a68559c.setIcon(icon_e4eaebd7bb73d204fd681b03304c246d);
+        
+    
+        var popup_6b030c20863c9cf940f0c03eb5c25937 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aff7dece21e36e1b949b4dad1c9ea2c1 = $(`<div id="html_aff7dece21e36e1b949b4dad1c9ea2c1" style="width: 100.0%; height: 100.0%;"><b>Severe Thunderstorm Warning</b><br>The National Weather Service in Chicago has issued a  * Severe Thunderstorm Warning for... Lake County in northeastern Illinois... Eastern McHenry County in northeastern Illinois... DuPage County in northeastern Illinois... Northern Cook County in northeastern Illinois...  * Until 600 PM CST.  * At 435 PM CST, severe thunderstorms were located along a line extending from Richmond to near DeKalb to near Plano, moving northeast at 55 mph.  HAZARD...70 mph wind gusts and penny size hail.  SOURCE...Trained weather spotters. These storms have a history of producing damaging 70 mph winds west of the Chicago metro.  IMPACT...Expect considerable tree damage. Damage is likely to mobile homes, roofs, and outbuildings.  * Locations impacted include... Northwest side of Chicago, Aurora, Naperville, Elgin, Waukegan, Arlington Heights, Evanston, Schaumburg, Bolingbrook, Palatine, Skokie, Des Plaines, Berwyn, Mount Prospect, Wheaton, Hoffman Estates, Oak Park, Downers Grove, Glenview and Elmhurst.  This includes...Argonne National Laboratory, Brookfield Zoo, Oakton Community College, Triton College, Benedictine University, Chain O Lakes State Park, College of DuPage, College of Lake County, Great Lakes Naval Training Center, Harper College, Lake Forest College, Mchenry County College, Moraine Hills State Park, Morton Arboretum, Northeastern Illinois University, Northwestern University, Wheaton College, and North Central College.<br>Identifier: NWS-IDP-PROD-4522684-3753160<br>Sender: w-nws.webmaster@noaa.gov<br>Sent: 2020-11-10T22:38:00.000Z</div>`)[0];
+                popup_6b030c20863c9cf940f0c03eb5c25937.setContent(html_aff7dece21e36e1b949b4dad1c9ea2c1);
+            
+        
+
+        marker_7cb1c1524795fbb58802532a8a68559c.bindPopup(popup_6b030c20863c9cf940f0c03eb5c25937)
+        ;
+
+        
+    
+    
+            marker_7cb1c1524795fbb58802532a8a68559c.bindTooltip(
+                `<div>
+                     NWS-IDP-PROD-4522684-3753160
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_dd5f99d563534ec4ed3e800db8aa85a9 = L.polygon(
+                [[-87.8, 42.49], [-87.83, 42.27], [-87.74, 42.13], [-87.67, 42.06], [-87.66, 42.01], [-87.91, 41.72], [-87.96, 41.69], [-88.03, 41.69], [-88.03, 41.73], [-88.26, 41.73], [-88.26, 42.07], [-88.24, 42.07], [-88.24, 42.15], [-88.44, 42.16], [-88.25, 42.5], [-87.8, 42.49]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_92277783bf58bef95e35065b9260ee59);
+        
+    
+            var marker_ecfd1f5a31dc208e26eb0a3257a29ab5 = L.marker(
+                [36.819086, -94.3759],
+                {
+}
+            ).addTo(map_92277783bf58bef95e35065b9260ee59);
+        
+    
+            var icon_c0c9a2d650ec7d5018356fcb54dc4de4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ecfd1f5a31dc208e26eb0a3257a29ab5.setIcon(icon_c0c9a2d650ec7d5018356fcb54dc4de4);
+        
+    
+        var popup_a05d5c7e3e814b3cd011bd0c57bc51e8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f783ec0032c3f6118aee9b2a92aea818 = $(`<div id="html_f783ec0032c3f6118aee9b2a92aea818" style="width: 100.0%; height: 100.0%;"><b>Extreme Fire Danger</b><br>THE GFDI DOES NOT ACCOUNT FOR PRECIPITATION THAT OCCURS WITHIN THE HOUR PRECEDING ANY GIVEN FORECAST HOUR BELOW OR ANY SNOW ON THE GROUND AT THE FORECAST HOUR. PLEASE MAKE APPROPRIATE ADJUSTMENTS.(ALL TIME REFERENCES ARE IN CST)  DAY/DATE      24HR INDEX   *  MID  3AM  6AM  9AM NOON  3PM  6PM  9PM THU NOV 07  LOW         0  *                                 L    L   FRI NOV 08  MODERATE    3  *   L    L    L    L    L    M    L    L   SAT NOV 09  LOW         1  *   L    L    L    L    L    L    L    L   SUN NOV 10  LOW         0  *   L    L    L    L    L    L    L    L   MON NOV 11  LOW         0  *   L    L    L    L    L    L    L    L   TUE NOV 12  LOW         0  *   L    L    L    L    L    L    L    L<br>Identifier: NWS-130404-607269<br>Sender: w-nws.webmaster@noaa.gov<br>Sent: 2013-11-07T22:46:55.000Z</div>`)[0];
+                popup_a05d5c7e3e814b3cd011bd0c57bc51e8.setContent(html_f783ec0032c3f6118aee9b2a92aea818);
+            
+        
+
+        marker_ecfd1f5a31dc208e26eb0a3257a29ab5.bindPopup(popup_a05d5c7e3e814b3cd011bd0c57bc51e8)
+        ;
+
+        
+    
+    
+            marker_ecfd1f5a31dc208e26eb0a3257a29ab5.bindTooltip(
+                `<div>
+                     NWS-130404-607269
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ede131cdf618821f4e592c699fb3c2ea = L.marker(
+                [32.883249, -111.3447],
+                {
+}
+            ).addTo(map_92277783bf58bef95e35065b9260ee59);
+        
+    
+            var icon_12ed42c83307b51209d1b7569da75d2c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ede131cdf618821f4e592c699fb3c2ea.setIcon(icon_12ed42c83307b51209d1b7569da75d2c);
+        
+    
+        var popup_88a6a92715372ac3771770d96863f5c6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2d6443081805f57214020771a06e33d3 = $(`<div id="html_2d6443081805f57214020771a06e33d3" style="width: 100.0%; height: 100.0%;"><b>Flood Advisory</b><br>THE NATIONAL WEATHER SERVICE IN TUCSON HAS ISSUED A  * SMALL STREAM FLOOD ADVISORY FOR POOR DRAINAGE AREAS FOR... EAST CENTRAL PINAL COUNTY IN SOUTHEASTERN ARIZONA...  * UNTIL 445 PM MST  * AT 147 PM MST...DOPPLER RADAR INDICATED THAT A SERIES OF THUNDERSTORMS WITH HEAVY RAIN HAS MOVED OVER THE SAME AREAS SOUTH AND EAST OF DUDLEYVILLE SINCE JUST BEFORE 12 NOON. UP TO TWO INCHES MAY HAVE ALREADY FALLEN, POSSLBLY HIGHER EAST OF STATE HIGHWAY 77, WHICH COULD CAUSE SMALL STREAM FLOODING ESPECIALLY IN POOR DRAINAGE AREAS. ADDITIONAL THUNDERSTORMS MAY MOVE ACROSS THIS AREA FOR THE REMAINDER OF THE AFTERNOON HOURS  * SOME LOCATIONS THAT MAY EXPERIENCE FLOODING INCLUDE... DUDLEYVILLE.<br>Identifier: NWS-IDP-PROD-2078547-1938011<br>Sender: w-nws.webmaster@noaa.gov<br>Sent: 2016-09-12T20:52:16.000Z</div>`)[0];
+                popup_88a6a92715372ac3771770d96863f5c6.setContent(html_2d6443081805f57214020771a06e33d3);
+            
+        
+
+        marker_ede131cdf618821f4e592c699fb3c2ea.bindPopup(popup_88a6a92715372ac3771770d96863f5c6)
+        ;
+
+        
+    
+    
+            marker_ede131cdf618821f4e592c699fb3c2ea.bindTooltip(
+                `<div>
+                     NWS-IDP-PROD-2078547-1938011
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_c85cab6a889ad4c9bdb63fb2938f3d13 = L.polygon(
+                [[-110.61, 32.97], [-110.56, 32.89], [-110.75, 32.84], [-110.78, 32.9], [-110.61, 32.97]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_92277783bf58bef95e35065b9260ee59);
+        
+    
+            var layer_control_02566e99408a6d11dbf7d70428df43dc_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_b71e894c533abc0228b6c516bf417893,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_02566e99408a6d11dbf7d70428df43dc = L.control.layers(
+                layer_control_02566e99408a6d11dbf7d70428df43dc_layers.base_layers,
+                layer_control_02566e99408a6d11dbf7d70428df43dc_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_92277783bf58bef95e35065b9260ee59);
+
+        
+</script>
+</html>
