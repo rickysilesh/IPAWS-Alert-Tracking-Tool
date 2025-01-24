@@ -8,9 +8,9 @@ from streamlit_folium import st_folium
 import re
 
 # OpenCage API key
-opencage_api_key = "091322c2c53048edbe1d12dd1b24c0d2"  # Replace with your actual OpenCage API key
+opencage_api_key = "api-key"  # Replace with your actual OpenCage API key
 # Google Geocoding API key
-google_api_key = "AIzaSyAvwk_o6huhAmCSx3nX87KGHVLYUdmMv90"  # Replace with your actual Google API key
+google_api_key = "api-key"  # Replace with your actual Google API key
 
 # Cache for storing geocoded results
 cache = {}
